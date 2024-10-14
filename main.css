@@ -1,0 +1,67 @@
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#FFD700;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 2em; color: #111; font-family: ‘Helvetica Neue’, sans-serif; font-size: 36px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+  color: #111; font-family: ‘Open Sans’, sans-serif; font-size: 24px; font-weight: bold; line-height: 32px; margin: 0 0 72px; text-align: left; margin-bottom: 24px;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 0px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD700;
+}
+
+p {
+  color: #685206; font-family: ‘Helvetica Neue’, sans-serif; font-size: 18px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; border-radius: 0px; margin-bottom: 30px;
+}
+
+
+
+/* https://ruboost.ru/sajtostroenie/osnovy-css/krasivy-primerov-teksta-na-css/?ysclid=m294cxqyx220318747 */
